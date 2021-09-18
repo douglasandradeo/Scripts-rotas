@@ -1,0 +1,21 @@
+.fatec1 {
+    height: 90vh;
+    background: rgb(238, 199, 205);
+}
+
+.fatec1 h1 {
+    padding: 200px;
+}
+
+.footersubitem {
+    height: 5%;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(75, 83, 80, 0.226)
+}
+
+.footersubitem h2, .footersubitem h3 {
+    background-color: rgba(75, 83, 80, 0.226)
+}

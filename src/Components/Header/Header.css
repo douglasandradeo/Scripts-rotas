@@ -1,0 +1,113 @@
+/*Configuração geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 51px;
+    background-color: rgb(62, 67, 70);
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 200px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(62, 67, 70);
+    color: #fff
+}
+
+.submenu-1, .submenu-2, .submenu-3{
+    position:absolute;
+    visibility: hidden;
+}
+
+
+/* Configurações de submenus */
+.menu ul li:hover > .submenu-1 {
+    visibility: visible;
+}
+
+.noturno:hover > .submenu-2 {
+    visibility: visible;
+}
+
+.menu li:hover > .submenu-2{ 
+    display:block;
+    top:0; 
+    left:195px; 
+    padding:5px; 
+    width:200px;  
+    border-radius: 0 5px 5px 5px; 
+}
+
+.ads:hover > .submenu-3 {
+    visibility: visible;
+}
+
+.menu li:hover > .submenu-3{ 
+    display:block; 
+    top:0; 
+    left:195px; 
+    padding:5px; 
+    width:200px;  
+    border-radius: 0 5px 5px 5px; 
+}
+
+.menu a:hover, .submenu-1 li:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    cursor: pointer;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.submenu-1, .submenu-2, .submenu-3 {
+    background-color: rgb(62, 67, 70);
+    color: white
+}
+
+.submenu-1 ul li {
+    height: 25px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Ajuste a tela */
+@media(max-width: 800px) {
+    .menu {
+        margin-top: 5px;
+        transition: all .4s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
